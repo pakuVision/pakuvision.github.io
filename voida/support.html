@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート | Voida</title>
+<meta name="description" content="Voida（ヴォイダ）のサポートページ。よくある質問とお問い合わせ先のご案内。">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" type="image/png" href="./favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #ececea;
+    --ink-soft: #9b9892;
+    --hairline: rgba(255, 255, 255, 0.14);
+    --accent: #c9c4b8;
+    --highlight-bg: rgba(255, 255, 255, 0.055);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0a0a0a;
+    color: var(--ink);
+    font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", sans-serif;
+    font-size: 15.5px;
+    line-height: 2.0;
+    letter-spacing: 0.02em;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("./bg.jpg") center / cover no-repeat;
+    z-index: -1;
+  }
+  .page {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 72px 28px 96px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.42em;
+    color: var(--ink-soft);
+  }
+  .brand img {
+    width: 26px;
+    height: 26px;
+    display: block;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    margin: 28px 0 10px;
+  }
+  .tagline {
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    letter-spacing: 0.06em;
+  }
+  section { margin-top: 56px; }
+  h2 {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: 8px;
+  }
+  details {
+    border-bottom: 1px solid var(--hairline);
+  }
+  summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 18px 28px 18px 0;
+    font-weight: 700;
+    font-size: 15px;
+    position: relative;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 400;
+    color: var(--accent);
+    transition: transform 0.2s ease;
+  }
+  details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+  .answer {
+    padding: 0 4px 22px 0;
+    color: var(--ink);
+  }
+  .answer p + p { margin-top: 10px; }
+  .answer ol {
+    margin: 8px 0 0 1.4em;
+  }
+  .answer li { margin-bottom: 4px; }
+  .contact-box {
+    margin-top: 20px;
+    padding: 26px;
+    background: var(--highlight-bg);
+    border-left: 2px solid var(--accent);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+  .contact-box .mail {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+  .contact-box .note {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-top: 8px;
+  }
+  a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--hairline); text-underline-offset: 4px; }
+  a:hover { text-decoration-color: var(--accent); }
+  footer {
+    margin-top: 88px;
+    padding-top: 24px;
+    border-top: 1px solid var(--hairline);
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  footer a { color: var(--ink-soft); }
+  @media (max-width: 480px) {
+    .page { padding: 56px 22px 80px; }
+    h1 { font-size: 23px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="brand"><img src="./voida_icon_white.png" alt="">VOIDA</p>
+  <h1>サポート</h1>
+  <p class="tagline">Empty your mind. Just shoot.</p>
+
+  <section>
+    <h2>よくある質問</h2>
+
+    <details>
+      <summary>撮影した写真はどこに保存されますか？</summary>
+      <div class="answer">
+        <p>iOSの「写真」アプリ内に作成される「Voida」アルバムに保存されます。写真はすべて端末内で処理され、外部のサーバーに送信されることはありません。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>写真がインターネットに送信されることはありますか？</summary>
+      <div class="answer">
+        <p>ありません。被写界深度の解析、ボケの生成、フィルター（LUT）の適用を含むすべての画像処理は、お使いのiPhoneの中だけで完結します。詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>購入を復元するには？</summary>
+      <div class="answer">
+        <p>機種変更後や再インストール後は、アプリ内の課金画面にある「購入の復元」をタップしてください。購入時と同じApple Accountでサインインしている必要があります。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>サブスクリプションを解約するには？</summary>
+      <div class="answer">
+        <p>サブスクリプションはAppleを通じて管理されています。次の手順で解約できます。</p>
+        <ol>
+          <li>iPhoneの「設定」を開く</li>
+          <li>一番上の自分の名前をタップ</li>
+          <li>「サブスクリプション」をタップ</li>
+          <li>「Voida」を選択し、「サブスクリプションをキャンセルする」をタップ</li>
+        </ol>
+        <p>解約後も、現在の請求期間が終了するまではご利用いただけます。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>不具合を見つけました</summary>
+      <div class="answer">
+        <p>ご迷惑をおかけして申し訳ございません。お手数ですが、下記のお問い合わせ先までご連絡ください。その際、お使いの機種・iOSのバージョン・不具合が発生したときの操作をあわせてお知らせいただけますと大変助かります。</p>
+      </div>
+    </details>
+  </section>
+
+  <section>
+    <h2>お問い合わせ</h2>
+    <div class="contact-box">
+      <p class="mail"><a href="mailto:pakuvision@gmail.com">pakuvision@gmail.com</a></p>
+      <p class="note">通常2〜3営業日以内にご返信いたします。機能のご要望などもお気軽にお寄せください。</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 pakuvision</span>
+    <span><a href="./privacy.html">プライバシーポリシー</a></span>
+  </footer>
+
+</div>
+</body>
+</html>
