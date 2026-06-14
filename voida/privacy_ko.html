@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>개인정보 처리방침 | Voida</title>
+<meta name="description" content="Voida 개인정보 처리방침. 촬영한 사진은 모두 기기 안에서 처리되며 외부로 전송되지 않습니다.">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" type="image/png" href="./favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #ececea;
+    --ink-soft: #9b9892;
+    --hairline: rgba(255, 255, 255, 0.14);
+    --accent: #c9c4b8;
+    --highlight-bg: rgba(255, 255, 255, 0.055);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: #0a0a0a;
+    color: var(--ink);
+    font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+    font-size: 15.5px;
+    line-height: 1.95;
+    letter-spacing: 0.01em;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("./bg.jpg") center / cover no-repeat;
+    z-index: -1;
+  }
+  .page {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 72px 28px 96px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.42em;
+    color: var(--ink-soft);
+  }
+  .brand img {
+    width: 26px;
+    height: 26px;
+    display: block;
+  }
+  .brand a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+    margin: 28px 0 10px;
+  }
+  .meta {
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    letter-spacing: 0.06em;
+  }
+  .lede {
+    margin: 44px 0 0;
+    padding: 26px 26px;
+    background: var(--highlight-bg);
+    border-left: 2px solid var(--accent);
+    font-size: 15px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+  .lede strong { font-weight: 700; color: #fff; }
+  section { margin-top: 56px; }
+  h2 {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: 20px;
+  }
+  h2 .num {
+    font-size: 12.5px;
+    font-weight: 500;
+    color: var(--accent);
+    margin-right: 14px;
+    letter-spacing: 0.1em;
+  }
+  h3 {
+    font-size: 15.5px;
+    font-weight: 700;
+    margin: 26px 0 6px;
+  }
+  p + p { margin-top: 14px; }
+  ul { list-style: none; margin-top: 10px; }
+  li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 6px;
+  }
+  li::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 0.95em;
+    width: 7px;
+    height: 1px;
+    background: var(--accent);
+  }
+  .svc {
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    letter-spacing: 0.04em;
+    display: block;
+    margin-bottom: 4px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 14px;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: left;
+    padding: 12px 14px 12px 0;
+    border-bottom: 1px solid var(--hairline);
+    vertical-align: top;
+    line-height: 1.8;
+  }
+  th { font-weight: 700; white-space: nowrap; width: 11em; color: var(--ink); }
+  a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--hairline); text-underline-offset: 4px; }
+  a:hover { text-decoration-color: var(--accent); }
+  footer {
+    margin-top: 88px;
+    padding-top: 24px;
+    border-top: 1px solid var(--hairline);
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  footer a { color: var(--ink-soft); }
+  @media (max-width: 480px) {
+    .page { padding: 56px 22px 80px; }
+    h1 { font-size: 23px; }
+    th { width: auto; display: block; border-bottom: none; padding-bottom: 0; }
+    td { display: block; padding-top: 4px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="brand"><a href="./support_ko.html"><img src="./voida_icon_white.png" alt="">VOIDA</a></p>
+  <h1>개인정보 처리방침</h1>
+  <p class="meta">제정일: 2026년 6월 7일&ensp;/&ensp;운영자: pakuvision</p>
+
+  <div class="lede">
+    <p>Voida는 촬영에 집중하기 위한 카메라 앱입니다. <strong>촬영한 사진·영상은 모두 사용 중인 기기 안에서 처리됩니다. 사진이 당사나 제3자의 서버로 전송되는 일은 일절 없습니다.</strong></p>
+  </div>
+
+  <section>
+    <h2><span class="num">01</span>기본 방침</h2>
+    <p>pakuvision(이하 '당사')은 iOS 앱 'Voida'(이하 '본 앱')에서 이용자 정보의 취급에 관하여 다음과 같이 개인정보 처리방침을 정합니다. 당사는 본 앱의 품질 유지·개선에 필요한 최소한의 정보만을 취급하며, 그 외의 정보는 수집하지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>수집하는 정보</h2>
+    <p>본 앱이 외부로 전송하는 정보는 다음 3가지로 한정됩니다. 모두 이용자 개인을 특정하지 않습니다.</p>
+
+    <h3>(1) 크래시 정보</h3>
+    <span class="svc">Firebase Crashlytics (Google LLC)</span>
+    <p>앱이 예기치 않게 종료되었을 때의 크래시 로그, 기기 모델명, OS 버전 등의 진단 정보. 오류의 원인 규명과 수정을 위해 이용합니다.</p>
+
+    <h3>(2) 이용 동향 정보</h3>
+    <span class="svc">Firebase Analytics (Google LLC)</span>
+    <p>사용된 필터의 종류나 기능의 이용 횟수 등 앱의 이용 상황에 관한 통계 정보. 기능의 개선·취사선택 판단을 위해 이용합니다. 광고 ID는 수집하지 않으며, 개인을 식별할 수 없는 형식으로 기록됩니다.</p>
+
+    <h3>(3) 구매 처리 정보</h3>
+    <span class="svc">RevenueCat, Inc.</span>
+    <p>App Store에서의 구매·구독을 관리하기 위한 영수증 정보 및 익명의 앱 이용자 ID. 구매 상태의 확인·복원을 위해 이용합니다. 당사가 이름이나 신용카드 정보를 수집하는 일은 없습니다.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>수집하지 않는 정보</h2>
+    <p>다음 정보는 외부로 전송되지 않고, 모두 기기 안에서만 처리됩니다.</p>
+    <ul>
+      <li>촬영한 사진·영상 (심도 분석이나 필터 처리를 포함한 모든 이미지 처리는 기기 안에서 완결됩니다)</li>
+      <li>위치 정보 (사진의 Exif 정보로서 기기 안의 사진 라이브러리에 기록하기 위해서만 사용하며, 외부로는 전송하지 않습니다)</li>
+      <li>연락처, 이름, 이메일 주소, 기타 개인정보</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>이용 목적</h2>
+    <p>수집한 정보는 다음 목적으로만 이용합니다.</p>
+    <ul>
+      <li>오류의 감지 및 수정</li>
+      <li>기능의 개선 및 개발 우선순위 판단</li>
+      <li>구매·구독의 관리 및 복원</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>제3자 제공</h2>
+    <p>당사는 위 목적의 달성에 필요한 범위에서 다음의 외국(미국)에 있는 사업자의 서비스를 이용하고 있으며, 이들 사업자의 서버에서 정보가 처리됩니다. 이들 이외의 제3자에게 정보를 제공하는 일은 없습니다.</p>
+    <table>
+      <tr>
+        <th>Google LLC</th>
+        <td>Firebase Crashlytics / Firebase Analytics 제공자. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">개인정보 처리방침</a></td>
+      </tr>
+      <tr>
+        <th>RevenueCat, Inc.</th>
+        <td>구매 관리 기반 제공자. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">개인정보 처리방침</a></td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span>트래킹에 관하여</h2>
+    <p>본 앱은 광고 식별자(IDFA)를 수집하지 않으며, 다른 회사의 앱이나 웹사이트를 횡단한 이용자 추적(트래킹)을 일절 하지 않습니다. 광고 표시도 없습니다.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span>정보의 보유와 삭제</h2>
+    <p>수집한 정보는 각 서비스 제공자가 정한 보유 기간에 따라 보관되며, 기간 경과 후 자동으로 삭제됩니다. 본 앱을 삭제한 후에는 새로운 정보가 수집되지 않습니다. 기록된 정보의 삭제를 원하시는 경우 아래 연락처로 문의해 주세요.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">08</span>처리방침의 변경</h2>
+    <p>본 방침의 내용은 법령 개정이나 기능 변경에 따라 개정될 수 있습니다. 중요한 변경이 있는 경우 본 페이지에서 공지합니다.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">09</span>문의</h2>
+    <p>본 방침에 관한 질문은 아래로 연락해 주세요.</p>
+    <p><a href="mailto:pakuvision@gmail.com">pakuvision@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 pakuvision</span>
+    <span><a href="./support_ko.html">지원</a></span>
+  </footer>
+
+</div>
+</body>
+</html>

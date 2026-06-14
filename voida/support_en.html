@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support | Voida</title>
+<meta name="description" content="Voida support page. Frequently asked questions and contact information.">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" type="image/png" href="./favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #ececea;
+    --ink-soft: #9b9892;
+    --hairline: rgba(255, 255, 255, 0.14);
+    --accent: #c9c4b8;
+    --highlight-bg: rgba(255, 255, 255, 0.055);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0a0a0a;
+    color: var(--ink);
+    font-family: "Zen Kaku Gothic New", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 15.5px;
+    line-height: 2.0;
+    letter-spacing: 0.02em;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("./bg.jpg") center / cover no-repeat;
+    z-index: -1;
+  }
+  .page {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 72px 28px 96px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.42em;
+    color: var(--ink-soft);
+  }
+  .brand img {
+    width: 26px;
+    height: 26px;
+    display: block;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    margin: 28px 0 10px;
+  }
+  .tagline {
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    letter-spacing: 0.06em;
+  }
+  section { margin-top: 56px; }
+  h2 {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: 8px;
+  }
+  details {
+    border-bottom: 1px solid var(--hairline);
+  }
+  summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 18px 28px 18px 0;
+    font-weight: 700;
+    font-size: 15px;
+    position: relative;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 400;
+    color: var(--accent);
+    transition: transform 0.2s ease;
+  }
+  details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+  .answer {
+    padding: 0 4px 22px 0;
+    color: var(--ink);
+  }
+  .answer p + p { margin-top: 10px; }
+  .answer ol {
+    margin: 8px 0 0 1.4em;
+  }
+  .answer li { margin-bottom: 4px; }
+  .contact-box {
+    margin-top: 20px;
+    padding: 26px;
+    background: var(--highlight-bg);
+    border-left: 2px solid var(--accent);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+  .contact-box .mail {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+  .contact-box .note {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-top: 8px;
+  }
+  a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--hairline); text-underline-offset: 4px; }
+  a:hover { text-decoration-color: var(--accent); }
+  footer {
+    margin-top: 88px;
+    padding-top: 24px;
+    border-top: 1px solid var(--hairline);
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  footer a { color: var(--ink-soft); }
+  @media (max-width: 480px) {
+    .page { padding: 56px 22px 80px; }
+    h1 { font-size: 23px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="brand"><img src="./voida_icon_white.png" alt="">VOIDA</p>
+  <h1>Support</h1>
+  <p class="tagline">Empty your mind. Just shoot.</p>
+
+  <section>
+    <h2>FAQ</h2>
+
+    <details>
+      <summary>Where are my photos saved?</summary>
+      <div class="answer">
+        <p>They are saved to a "Voida" album created inside the iOS Photos app. All photos are processed on your device and are never sent to any external server.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Are my photos ever sent over the internet?</summary>
+      <div class="answer">
+        <p>No. All image processing &mdash; including depth analysis, bokeh generation, and filter (LUT) application &mdash; happens entirely on your iPhone. For details, see our <a href="./privacy_en.html">Privacy Policy</a>.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I restore my purchase?</summary>
+      <div class="answer">
+        <p>After switching devices or reinstalling, tap "Restore Purchase" on the in-app purchase screen. You need to be signed in with the same Apple Account you used at the time of purchase.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I cancel my subscription?</summary>
+      <div class="answer">
+        <p>Subscriptions are managed through Apple. You can cancel as follows:</p>
+        <ol>
+          <li>Open "Settings" on your iPhone</li>
+          <li>Tap your name at the top</li>
+          <li>Tap "Subscriptions"</li>
+          <li>Select "Voida" and tap "Cancel Subscription"</li>
+        </ol>
+        <p>After canceling, you can keep using the app until the end of the current billing period.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>I found a bug</summary>
+      <div class="answer">
+        <p>We're sorry for the inconvenience. Please reach out using the contact below. It helps us greatly if you include your device model, iOS version, and the steps you took when the issue occurred.</p>
+      </div>
+    </details>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="contact-box">
+      <p class="mail"><a href="mailto:pakuvision@gmail.com">pakuvision@gmail.com</a></p>
+      <p class="note">We usually reply within 2&ndash;3 business days. Feel free to send feature requests too.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 pakuvision</span>
+    <span><a href="./privacy_en.html">Privacy Policy</a></span>
+  </footer>
+
+</div>
+</body>
+</html>
