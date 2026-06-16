@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support | ilgi</title>
+<meta name="description" content="Support page for ilgi. Frequently asked questions and contact information.">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" type="image/png" href="./favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #ececea;
+    --ink-soft: #9b9892;
+    --hairline: rgba(255, 255, 255, 0.14);
+    --accent: #c9c4b8;
+    --highlight-bg: rgba(255, 255, 255, 0.055);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0a0a0a;
+    color: var(--ink);
+    font-family: "Inter", -apple-system, sans-serif;
+    font-size: 15.5px;
+    line-height: 1.85;
+    letter-spacing: 0.005em;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page { max-width: 660px; margin: 0 auto; padding: 72px 28px 96px; }
+  .brand {
+    display: flex; align-items: center; gap: 13px;
+    font-size: 13px; font-weight: 500; letter-spacing: 0.42em; color: var(--ink-soft);
+  }
+  .brand img { width: 26px; height: 26px; display: block; border-radius: 6px; }
+  h1 { font-weight: 700; font-size: 28px; line-height: 1.4; letter-spacing: 0.01em; margin: 28px 0 10px; }
+  .tagline { font-size: 13.5px; color: var(--ink-soft); letter-spacing: 0.01em; }
+  section { margin-top: 56px; }
+  h2 { font-weight: 700; font-size: 18px; letter-spacing: 0.02em; padding-bottom: 12px; border-bottom: 1px solid var(--hairline); margin-bottom: 8px; }
+  details { border-bottom: 1px solid var(--hairline); }
+  summary { cursor: pointer; list-style: none; padding: 18px 28px 18px 0; font-weight: 700; font-size: 15px; position: relative; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; position: absolute; right: 4px; top: 50%; transform: translateY(-50%); font-weight: 400; color: var(--accent); transition: transform 0.2s ease; }
+  details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+  .answer { padding: 0 4px 22px 0; color: var(--ink); }
+  .answer p + p { margin-top: 10px; }
+  .answer ol { margin: 8px 0 0 1.4em; }
+  .answer li { margin-bottom: 4px; }
+  .contact-box { margin-top: 20px; padding: 26px; background: var(--highlight-bg); border-left: 2px solid var(--accent); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+  .contact-box .mail { font-size: 17px; font-weight: 700; letter-spacing: 0.01em; }
+  .contact-box .note { font-size: 13px; color: var(--ink-soft); margin-top: 8px; }
+  a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--hairline); text-underline-offset: 4px; }
+  a:hover { text-decoration-color: var(--accent); }
+  footer { margin-top: 88px; padding-top: 24px; border-top: 1px solid var(--hairline); font-size: 12.5px; color: var(--ink-soft); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  footer a { color: var(--ink-soft); }
+  @media (max-width: 480px) { .page { padding: 56px 22px 80px; } h1 { font-size: 23px; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="brand"><img src="./ilgi_icon.png" alt="">ILGI</p>
+  <h1>Support</h1>
+  <p class="tagline">Your moods and passing thoughts.</p>
+
+  <section>
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+      <summary>Where is my data stored?</summary>
+      <div class="answer">
+        <p>All your entries are stored only on your device. Nothing is sent to external servers. Your records are yours alone.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Is there a cost to use the app?</summary>
+      <div class="answer">
+        <p>All core features — journaling, mood tracking, and the habit tracker — are free to use. There are no ads.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Can I transfer my data to a new device?</summary>
+      <div class="answer">
+        <p>Since your entries are stored on your device, please use your device's backup feature to transfer them.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>I found a bug</summary>
+      <div class="answer">
+        <p>We're sorry for the inconvenience. Please contact us at the address below. It helps a lot if you include your device model, iOS version, and what you were doing when the issue occurred.</p>
+      </div>
+    </details>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="contact-box">
+      <p class="mail"><a href="mailto:pakuvision@gmail.com">pakuvision@gmail.com</a></p>
+      <p class="note">We usually reply within 2–3 business days. Feel free to send feature requests too.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 pakuvision</span>
+  </footer>
+
+</div>
+</body>
+</html>

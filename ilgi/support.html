@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート | ilgi</title>
+<meta name="description" content="ilgi（イルギ）のサポートページ。よくある質問とお問い合わせ先のご案内。">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" type="image/png" href="./favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #ececea;
+    --ink-soft: #9b9892;
+    --hairline: rgba(255, 255, 255, 0.14);
+    --accent: #c9c4b8;
+    --highlight-bg: rgba(255, 255, 255, 0.055);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0a0a0a;
+    color: var(--ink);
+    font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", sans-serif;
+    font-size: 15.5px;
+    line-height: 2.0;
+    letter-spacing: 0.02em;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 72px 28px 96px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.42em;
+    color: var(--ink-soft);
+  }
+  .brand img {
+    width: 26px;
+    height: 26px;
+    display: block;
+    border-radius: 6px;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    margin: 28px 0 10px;
+  }
+  .tagline {
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    letter-spacing: 0.06em;
+  }
+  section { margin-top: 56px; }
+  h2 {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: 8px;
+  }
+  details {
+    border-bottom: 1px solid var(--hairline);
+  }
+  summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 18px 28px 18px 0;
+    font-weight: 700;
+    font-size: 15px;
+    position: relative;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 400;
+    color: var(--accent);
+    transition: transform 0.2s ease;
+  }
+  details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+  .answer {
+    padding: 0 4px 22px 0;
+    color: var(--ink);
+  }
+  .answer p + p { margin-top: 10px; }
+  .answer ol {
+    margin: 8px 0 0 1.4em;
+  }
+  .answer li { margin-bottom: 4px; }
+  .contact-box {
+    margin-top: 20px;
+    padding: 26px;
+    background: var(--highlight-bg);
+    border-left: 2px solid var(--accent);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+  .contact-box .mail {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+  .contact-box .note {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-top: 8px;
+  }
+  a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--hairline); text-underline-offset: 4px; }
+  a:hover { text-decoration-color: var(--accent); }
+  footer {
+    margin-top: 88px;
+    padding-top: 24px;
+    border-top: 1px solid var(--hairline);
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  footer a { color: var(--ink-soft); }
+  @media (max-width: 480px) {
+    .page { padding: 56px 22px 80px; }
+    h1 { font-size: 23px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="brand"><img src="./ilgi_icon.png" alt="">ILGI</p>
+  <h1>サポート</h1>
+  <p class="tagline">気分も、ふと思ったことも。</p>
+
+  <section>
+    <h2>よくある質問</h2>
+
+    <details>
+      <summary>データはどこに保存されますか？</summary>
+      <div class="answer">
+        <p>すべての記録はお使いの端末内に保存されます。外部のサーバーに送信されることはありません。あなたの記録は、あなただけのものです。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>料金はかかりますか？</summary>
+      <div class="answer">
+        <p>日記・気分の記録・習慣トラッカーなど、基本の機能はすべて無料でご利用いただけます。広告も表示されません。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>機種変更でデータを引き継げますか？</summary>
+      <div class="answer">
+        <p>記録は端末内に保存されているため、引き継ぎには端末のバックアップ機能をご利用ください。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>不具合を見つけました</summary>
+      <div class="answer">
+        <p>ご迷惑をおかけして申し訳ございません。お手数ですが、下記のお問い合わせ先までご連絡ください。その際、お使いの機種・iOSのバージョン・不具合が発生したときの操作をあわせてお知らせいただけますと大変助かります。</p>
+      </div>
+    </details>
+  </section>
+
+  <section>
+    <h2>お問い合わせ</h2>
+    <div class="contact-box">
+      <p class="mail"><a href="mailto:pakuvision@gmail.com">pakuvision@gmail.com</a></p>
+      <p class="note">通常2〜3営業日以内にご返信いたします。機能のご要望などもお気軽にお寄せください。</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 pakuvision</span>
+  </footer>
+
+</div>
+</body>
+</html>
