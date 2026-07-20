@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support | KISSA</title>
+<meta name="description" content="KISSA support page. Frequently asked questions and how to get in touch.">
+<meta name="theme-color" content="#f6f4ef">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f6f4ef;
+    --ink: #1c1b18;
+    --ink-soft: #8a867e;
+    --hairline: rgba(28, 27, 24, 0.14);
+    --accent: #1c1b18;
+    --highlight-bg: rgba(28, 27, 24, 0.045);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 16.5px;
+    line-height: 1.85;
+    letter-spacing: 0.01em;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 72px 28px 96px;
+  }
+  .brand {
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 0.42em;
+    color: var(--ink-soft);
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    margin: 28px 0 10px;
+  }
+  .tagline {
+    font-size: 14px;
+    color: var(--ink-soft);
+    letter-spacing: 0.04em;
+    font-style: italic;
+  }
+  section { margin-top: 56px; }
+  h2 {
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: 0.04em;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: 8px;
+  }
+  details {
+    border-bottom: 1px solid var(--hairline);
+  }
+  summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 18px 28px 18px 0;
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 400;
+    color: var(--ink-soft);
+    transition: transform 0.2s ease;
+  }
+  details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+  .answer {
+    padding: 0 4px 22px 0;
+    color: var(--ink);
+  }
+  .answer p + p { margin-top: 10px; }
+  .answer ol {
+    margin: 8px 0 0 1.4em;
+  }
+  .answer li { margin-bottom: 4px; }
+  .contact-box {
+    margin-top: 20px;
+    padding: 26px;
+    background: var(--highlight-bg);
+    border-left: 2px solid var(--accent);
+  }
+  .contact-box .mail {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+  .contact-box .note {
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    margin-top: 8px;
+  }
+  a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--hairline); text-underline-offset: 4px; }
+  a:hover { text-decoration-color: var(--accent); }
+  footer {
+    margin-top: 88px;
+    padding-top: 24px;
+    border-top: 1px solid var(--hairline);
+    font-size: 13px;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  footer a { color: var(--ink-soft); }
+  @media (max-width: 480px) {
+    .page { padding: 56px 22px 80px; }
+    h1 { font-size: 25px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="brand">KISSA</p>
+  <h1>Support</h1>
+  <p class="tagline">Make Your Aesthetic.</p>
+
+  <section>
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+      <summary>Where are my edited photos saved?</summary>
+      <div class="answer">
+        <p>When you tap SAVE, the photo is saved to "Recents" in the iOS Photos app. Your original photo stays as it is and is never overwritten.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Are my photos ever sent over the internet?</summary>
+      <div class="answer">
+        <p>No. All image processing — filters (LUTs), bokeh generation, grain, and more — is completed entirely inside your iPhone. See our <a href="./privacy_en.html">Privacy Policy</a> for details.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Is KISSA Pro a subscription?</summary>
+      <div class="answer">
+        <p>No, it's a one-time purchase. A single purchase gives you every feature forever, with no expiration. There are no monthly or annual recurring charges.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I restore my purchase?</summary>
+      <div class="answer">
+        <p>After changing devices or reinstalling, tap "Restore Purchase" on the settings screen inside the app. You must be signed in with the same Apple Account you used at the time of purchase.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I save in high quality?</summary>
+      <div class="answer">
+        <p>Turn on "High Quality Export" on the settings screen to save at the original photo's resolution (a Pro feature). When off, photos are saved at the same resolution shown on screen.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>I found a bug</summary>
+      <div class="answer">
+        <p>We're sorry for the trouble. Please contact us at the address below. It would help us greatly if you could include your device model, iOS version, and what you were doing when the issue occurred.</p>
+      </div>
+    </details>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="contact-box">
+      <p class="mail"><a href="mailto:pakuvision@gmail.com">pakuvision@gmail.com</a></p>
+      <p class="note">We usually reply within 2–3 business days. Feel free to send feature requests too.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 pakuvision</span>
+    <span><a href="./privacy_en.html">Privacy Policy</a></span>
+  </footer>
+
+</div>
+</body>
+</html>

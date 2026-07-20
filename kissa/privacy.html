@@ -160,11 +160,15 @@
 
   <section>
     <h2><span class="num">02</span>取得する情報</h2>
-    <p>本アプリが外部とやり取りする情報は、次の1種類に限られます。利用者個人を特定するものではありません。</p>
+    <p>本アプリが外部とやり取りする情報は、次の2種類に限られます。利用者個人を特定するものではありません。</p>
 
     <h3>（1）購入処理情報</h3>
     <span class="svc">Apple Inc.（App Store / StoreKit）／ RevenueCat, Inc.</span>
     <p>App Store での買い切り購入を処理・復元するためのレシート情報および匿名のアプリユーザーID。購入状態の確認・復元のために利用します。氏名やクレジットカード情報を当方が取得することはありません。</p>
+
+    <h3>（2）診断・利用情報</h3>
+    <span class="svc">Google LLC（Firebase Crashlytics / Firebase Analytics / Cloud Firestore）</span>
+    <p>アプリの安定性と品質向上のため、匿名のクラッシュレポートと、どのフィルターやプリセットが利用されたかといった匿名の利用イベント（およびその設定値）を取得します。これらのデータは、利用者個人を特定する情報と結び付けられることはありません。</p>
   </section>
 
   <section>
@@ -182,12 +186,13 @@
     <p>取得した情報は、次の目的にのみ利用します。</p>
     <ul>
       <li>買い切り購入の処理・確認および復元</li>
+      <li>アプリの安定性・品質の向上、および機能の利用状況の把握</li>
     </ul>
   </section>
 
   <section>
     <h2><span class="num">05</span>第三者への提供</h2>
-    <p>当方は、購入処理のために以下の外国（米国）にある事業者のサービスを利用しており、これらの事業者のサーバーで情報が処理されます。これら以外の第三者に情報を提供することはありません。</p>
+    <p>当方は、購入処理および診断のために以下の外国（米国）にある事業者のサービスを利用しており、これらの事業者のサーバーで情報が処理されます。これら以外の第三者に情報を提供することはありません。</p>
     <table>
       <tr>
         <th>Apple Inc.</th>
@@ -196,6 +201,10 @@
       <tr>
         <th>RevenueCat, Inc.</th>
         <td>購入管理基盤の提供者。<a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">プライバシーポリシー</a></td>
+      </tr>
+      <tr>
+        <th>Google LLC</th>
+        <td>Firebase Crashlytics / Firebase Analytics / Cloud Firestore の提供者。<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">プライバシーポリシー</a></td>
       </tr>
     </table>
   </section>
